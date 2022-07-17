@@ -1,0 +1,30 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/luggage2/feature-checkin2/src",
+  "prefix": "luggage2",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/libs/luggage2/feature-checkin2"
+      ],
+      "options": {
+        "jestConfig": "libs/luggage2/feature-checkin2/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/luggage2/feature-checkin2/**/*.ts",
+          "libs/luggage2/feature-checkin2/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": [
+    "domain:luggage2",
+    "type:feature"
+  ]
+}

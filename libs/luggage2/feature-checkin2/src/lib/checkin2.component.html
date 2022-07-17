@@ -1,0 +1,9 @@
+<h1>luggage2-checkin2</h1>
+
+<table class="table">
+  <tr *ngFor="let luggage of luggageList$ | async">
+    <td>{{ luggage.id }}</td>
+    <td>{{ luggage.name }}</td>
+    <td>{{ luggage.description }}</td>
+  </tr>
+</table>

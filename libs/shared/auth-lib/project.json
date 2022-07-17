@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/shared/auth-lib/src",
+  "prefix": "flight-workspace",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/auth-lib"],
+      "options": {
+        "jestConfig": "libs/shared/auth-lib/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/auth-lib/**/*.ts",
+          "libs/shared/auth-lib/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["domain:shared", "typre:util"]
+}
